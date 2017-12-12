@@ -3,6 +3,8 @@
   margin 0
   box-sizing border-box
 }
+ul
+  list-style none
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
 body
   font-family: 'Roboto', sans-serif;
@@ -46,3 +48,76 @@ body
 .main
   width 100%
   padding 0 4%
+  h2
+    width 100%
+    height auto
+    margin 5% 0
+    position relative
+    font-size 1.2em
+    font-weight 500
+    color rgba(14, 20, 26, 0.8)
+    text-align center
+    &:after
+      content ""
+      width 40%
+      height 3px
+      position absolute
+      bottom -15px
+      left calc(50% - 20%)
+      background-color #e2e1e1
+
+.box-actions
+  width 100%
+  height auto
+  display inline-block
+  box-shadow 0 2px 8px rgba(14,20,26,0.1)
+  border 1px solid rgba(14,20,26,0.1)
+  margin-top 5%
+  padding 4%
+  &--symbol
+    width 100%
+    height auto
+    padding 2% 0
+    text-align center
+    display inline-block
+    font-size 1em
+    font-weight 500
+    color rgba(0, 0, 0, 1)
+    border-bottom 1px solid #e2e1e1
+    span 
+      width 100%
+      height auto
+      display inline-block
+      font-size .9em
+      margin-bottom 5px
+  &--refreshed
+    width 100%
+    height auto
+    padding 2% 0
+    text-align center
+    display inline-block
+    font-size .8em
+    font-weight 500
+    color rgba(0, 0, 0, 1)
+    border-bottom 1px solid #e2e1e1
+  &--values
+    li
+      height auto
+      padding 2% 0
+      text-align center
+      float left 
+      font-size .9em
+      font-weight 400
+      color rgba(0, 0, 0, 1)
+      border-bottom 1px solid #e2e1e1
+      span
+        font-weight 500
+        font-size .8em
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4)
+        width 50%
+      &:nth-child(5)
+        width 100%
+        border-bottom 0px
