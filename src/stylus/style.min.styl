@@ -74,6 +74,10 @@ header
   box-shadow 0 2px 8px rgba(14,20,26,0.1)
   border 1px solid rgba(14,20,26,0.1)
   padding 4%
+  &.value-positive
+    border: 1px solid #04B404
+  &.value-negative
+    border: 1px solid #B40404
   &--symbol
     width 100%
     height auto
@@ -90,6 +94,12 @@ header
       display inline-block
       font-size .9em
       margin-bottom 5px
+  &--percentage
+    display inline
+    &.value-positive
+      color #04B404
+    &.value-negative
+      color #B40404
   &--refreshed
     width 100%
     height auto
