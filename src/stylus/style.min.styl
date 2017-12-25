@@ -74,10 +74,9 @@ header
   box-shadow 0 2px 8px rgba(14,20,26,0.1)
   border 1px solid rgba(14,20,26,0.1)
   padding 4%
-  &.value-positive
-    border: 1px solid #04B404
-  &.value-negative
-    border: 1px solid #B40404
+  background-color #B40404
+  &.is-positive
+    background-color #04B404
   &--symbol
     width 100%
     height auto
@@ -86,7 +85,7 @@ header
     display inline-block
     font-size 1em
     font-weight 500
-    color rgba(0, 0, 0, 1)
+    color rgba(255, 255, 255, 1)
     border-bottom 1px solid #e2e1e1
     span 
       width 100%
@@ -108,7 +107,7 @@ header
     display inline-block
     font-size .8em
     font-weight 500
-    color rgba(0, 0, 0, 1)
+    color rgba(255, 255, 255, 1)
     border-bottom 1px solid #e2e1e1
   &--values
     li
@@ -118,7 +117,7 @@ header
       float left 
       font-size .9em
       font-weight 400
-      color rgba(0, 0, 0, 1)
+      color rgba(255, 255, 255, 1)
       border-bottom 1px solid #e2e1e1
       span
         font-weight 500
